@@ -5,5 +5,15 @@
     "/tests": "tests/index.html",
     "/tests/**": "tests/index.html",
     "/**": "index.html"
+  },
+  "proxy": {
+    "v1": {
+      "origin":"https://jibber-rails.herokuapp.com/v1/",
+      "headers": {
+        "Accept": "application/json"
+      },
+      "cookies": false,
+      "timeout": 30
+    }
   }
 }
